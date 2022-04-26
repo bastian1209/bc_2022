@@ -43,11 +43,11 @@ if __name__ == "__main__":
     parser.add_argument('--num-post-limit', type=int, default=10000)
     args = parser.parse_args()
 
-    consumer_key = "9K5PrCQxxwI0OGMKE9G0Stb4j"
-    consumer_key_secret = "tQUTp5SKJCWuR7FgGKzjk0YovD54R6k4MrvYQGv8xcuFMQQD4Z"
-    access_token = "1310440475371814912-XtMcLHTHWoILvL8VLpx2pZtkvefeyS"
-    access_token_secret = "KedbLZ5pmxrLKxwN2stjnJsT5MsiXtlHXrclcbfLpl9He"
-    b_token = "AAAAAAAAAAAAAAAAAAAAALvJbgEAAAAA5owyA7OauLtVgo6HhdKQc8%2BQyZk%3DebnzCgAUDh0eTCNQS1XX4ImulAfhdhob89xHMTujziBLdX8yiB"
+    consumer_key = ""
+    consumer_key_secret = ""
+    access_token = ""
+    access_token_secret = ""
+    b_token = ""
 
     client = tweepy.Client(bearer_token=b_token, 
                         consumer_key=consumer_key, 
