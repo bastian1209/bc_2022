@@ -1,5 +1,5 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-BOTNAME = "hermes"
-TOKEN = "5035520069:AAHXrviXBFO9didF_6HEpE1WhBeLuw-rTUM"
+BOTNAME = "SNU08"
+TOKEN = "5535035811:AAFY5UUBmJ0ZGJdTT4nGtkqCbWhJO1Wno4w"
