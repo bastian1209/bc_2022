@@ -1,9 +1,4 @@
 *.png
+*copy.ipynb
 *.csv
-__pycache__
-.vscode
-.ipynb_checkpoints
-<<<<<<< HEAD
 db_config.py
-=======
->>>>>>> a176f905475df947e30ca51eef759b947811d83c
