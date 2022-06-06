@@ -390,24 +390,6 @@ def error(update, context, **kwargs):
     except:
         pass
 
-# def social_link(update, context):
-#     bot = telepot.Bot(TOKEN)
-#     btn1 = BT(text = "🍀 Official Website 🍀", url = "https://xd.adobe.com/view/2314682e-3f11-491b-9c1e-1fe804a3e242-7647/", callback_data = "1")
-#     btn2 = BT(text = "🍀 Official Announcement Telegram Channel 🍀", url = "https://t.me/official_LUCK_announcement", callback_data = "2")
-#     btn3 = BT(text = "🍀 Official Twitter 🍀", url = "https://twitter.com/official_LUCK_", callback_data = "3")
-#     btn4 = BT(text = "🍀 Official Reddit 🍀", url = "https://www.reddit.com/user/official_LUCK_", callback_data = "4")
-#     mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4]])
-
-#     try:
-#         bot.sendVideo(chat_id = '@official_LUCK_community',
-#             video="https://t.me/official_LUCK_community/282",
-#             caption="*💖 WHY IS $LUCK TO SUCCESS? 💖*\n🎁 Chain Letter Protocol(CLP) is the most powerful marketing protocol covering crypto & real world \n🎁 The amazing reward system for ALL CONTRIBUTORS, sender, receiver, and staker \n🎁 REFERRAL REWARDS : 💵Sender💵 🔗 💌Lucky Chain Letter💌 🔗 💶Receiver💶 \n\n*💰 $LUCK Token 💰*\n💵 1. REWARD for CONTRIBUTORS : Pledge referral and mission rewards to senders and receivers, Various benefits \n💶 2. STAKING : Apply a high level of consistent APY \n💷 3. BUYBACK : $LUCK continues to increase in value through Buyback\n💴 4. TIER System : The more lucky chain letters you spread, the higher the tier you are assigned, which leads to higher rewards\n\n",
-#             reply_markup = mu,
-#             parse_mode = "Markdown")
-
-#     except Exception as e:    # 모든 예외의 에러 메시지를 출력할 때는 Exception을 사용
-#         print('예외가 발생했습니다.', e)
-
 def tothemoon(update, context):
     bot = telepot.Bot(TOKEN)
     btn1 = BT(text = "🍀 Official Website 🍀", url = "http://www.lucktoken.io/", callback_data = "1")
@@ -486,41 +468,7 @@ def market(update, context):
                    reply_markup = mu,
                    parse_mode = "Markdown")
 
-def whitelist(update, context):
-    bot = telepot.Bot(TOKEN)
-    btn = BT(text = "🍀 Visit LUCK WHITELIST page 🍀", url = "https://lucktoken.io/giveaway", callback_data = "1")
-    mu = MU(inline_keyboard = [[btn]])
-    # bot.sendMessage(chat_id = '@official_LUCK_community',
-    #                text = "*✨ WHITELIST ANNOUNCEMENT ✨*\n\n*Please join the campaign quickly ：*\n👉 https://lucktoken.io/giveaway\n\n🍀 Participate to be on the $LUCK Whitelist!\n🍀 Apply for the whitelist, create your referral link, and get $LUCK!\n\n*⏰ DEADLINE ⏰*\nWhitelist registration ends at: 09:00 AM UTC, *March 3rd*.\n\nWINNERS WILL BE ANNOUNCED OUR OFFICIAL CHANNEL AFTER THE END OF THIS EVENT\n\n*🗣 The more friends you refer, greater the chances you'll win!*\n🔸 1st place: 1 BNB (full allocation)\n🔸 2nd place: 0.7 BNB (half allocation)\n🔸 3rd place:  0.3 BNB (one third allocation)\n\n",
-    #                reply_markup = mu,
-    #                parse_mode = "Markdown")
-
-    bot.sendVideo(chat_id = '@official_LUCK_community',
-                video="https://t.me/official_LUCK_community/1513",
-                caption="*✨ WHITELIST ANNOUNCEMENT ✨*\n\n*Please join the campaign quickly ：*\n👉 https://lucktoken.io/giveaway\n\n🍀 Participate to be on the $LUCK Whitelist!\n🍀 Apply for the whitelist, create your referral link, and get $LUCK!\n\n*⏰ DEADLINE ⏰*\nWhitelist registration ends at: 09:00 AM UTC, *March 10th*.\n\nWINNERS WILL BE ANNOUNCED OUR OFFICIAL CHANNEL AFTER THE END OF THIS EVENT\n\n*🗣 The more friends you refer, greater the chances you'll win!*\n🔸 1st place: 1 BNB (full allocation)\n🔸 2nd place: 0.7 BNB (half allocation)\n🔸 3rd place:  0.3 BNB (one third allocation)\n\n",
-                reply_markup = mu,
-                parse_mode = "Markdown")
-
-
-def presale(update, context):
-    bot = telepot.Bot(TOKEN)
-    btn = BT(text = "🍀 PRESALE ANNOUNCEMENT 🍀", url = "https://www.pinksale.finance/#/launchpad\n\n", callback_data = "1")
-    mu = MU(inline_keyboard = [[btn]])
-    bot.sendMessage(chat_id = '@official_LUCK_community',
-                text = "*✨ PRESALE ANNOUNCEMENT ✨*\n\n🚨 OFFICIAL LINK FOR PRESALE 🚨\n👉 [Visit LUCK Presale page](https://www.pinksale.finance/#/launchpad)\n\nWe will have the following structure:\n\n*- First Come First Served ( FCFS )*\n\n*- SOFT CAP   : 50 BNB*\n*- HARD CAP  : 100 BNB*\n\n*- MIN BUY     : 0.1 BNB*\n*- MAX BUY    : 2 BNB*\n\n🍀 Part 1 : *WHITELIST ROUND*\n         START TIME : 09:00 AM UTC 01 Mar\n         END TIME    : 09:00 AM UTC 02 Mar\n\n🍀 Part 2 : *PUBLIC ROUND*\n         START TIME : 09:00 AM UTC 03 Mar\n         END TIME    : 09:00 AM UTC 04 Mar\n\n🍀 Part 3 : You will be able to *trade $LUCK on PANCAKESWAP* at 10:00 AM UTC 04 Mar\n\n*🍀 LUCK Token Address (BEP-20)*\n👉(token address)\n\n🚀 *Presale Rate　: 1 BNB* = 30,000,000 *LUCK*\n🚀 *Listing Rate  : 1 BNB* = 25,510,000 *LUCK*\n\n*Unsold Tokens : BURN🔥*\n",
-                reply_markup = mu,
-                parse_mode = "Markdown")
-
-def marketing(update, context):
-    bot = telepot.Bot(TOKEN)
-    btn = BT(text = "🍀 Send marketing proposal to clever 🍀", url = "https://t.me/luckclever", callback_data = "1")
-    mu = MU(inline_keyboard = [[btn]])
-    bot.sendMessage(chat_id = '@official_LUCK_community',
-                   text = "If you have a marketing proposal to present to Project LUCK, DM to @luckclever",
-                   reply_markup = mu,
-                   parse_mode = "Markdown")
-
-def push(update, context):
+def azuki(update, context):
     bot = telepot.Bot(TOKEN)
     btn1 = BT(text = "🍀 Official Website 🍀", url = "http://www.lucktoken.io/", callback_data = "1")
     btn2 = BT(text = "🍀 Official Community 🍀", url = "https://t.me/official_LUCK_community", callback_data = "2")
@@ -530,65 +478,37 @@ def push(update, context):
     mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4], [btn5]])
 
     bot.sendPhoto(chat_id = '@SNU_08',
-        photo="https://t.me/SNU_08/14?single",
-        caption="*💖 PUSH THE COMMAND 💖*\n\n /shill \n /rule \n /tothemoon \n /luck \n /marketing \n /baby \n /baby_get_luck \n /lucky_chain_letter",
+        photo="https://t.me/SNU_08/24",
+        caption="AZUKI : VIEWS & LIKES",
         reply_markup = mu,
         parse_mode = "Markdown")
-    
-def referral(update, context):
-    bot = telepot.Bot(TOKEN)
-    btn1 = BT(text = "🍀 Event Link 🍀", url = "https://lucktoken.io/giveaway", callback_data = "1")
-    mu = MU(inline_keyboard = [[btn1]])
+    bot.sendPhoto(chat_id = '@SNU_08',
+        photo="https://t.me/SNU_08/25",
+        caption="AZUKI : FORWORDS & RETWEETS",
+        reply_markup = mu,
+        parse_mode = "Markdown")
+     bot.sendPhoto(chat_id = '@SNU_08',
+        photo="https://t.me/SNU_08/26",
+        caption="AZUKI : POSTS",
+        reply_markup = mu,
+        parse_mode = "Markdown")
+     bot.sendPhoto(chat_id = '@SNU_08',
+        photo="https://t.me/SNU_08/27",
+        caption="AZUKI : REPLES",
+        reply_markup = mu,
+        parse_mode = "Markdown")
 
-    bot.sendMessage(chat_id = '@official_LUCK_community',
-                    text = "*🎰 What is the Referral Reward? 🎰*\n\n*👨‍👩‍👧‍👦 Refer Your Friends! 👨‍👩‍👧‍👦*\nBring a friend through your referral link and you can get the *Referral Rewards*!\nIf your friend brings another friend, you can get the *Bonus Referral Rewards*!\n\n*✏️ Complete the mission!*\nRegister your wallet address to receive rewards, and complete a simple SNS follow-up procedure to receive *REWARDS* for mission completion!\n\n*🚀 How to get Referral Rewards? 🚀*\n1️⃣ Complete a very simple mission!\n2️⃣ You'll get a reward!\n3️⃣ Issue a referral link!\n4️⃣ Send me a link!\n5️⃣ Get plenty of reward!\n\n*👇LINK👇*\nlucktoken.io/giveaway\n\n*🍀 Join LUCK, Grow together. $LUCK will make your wallet LUCKY 🍀*",
-                    reply_markup = mu,
-                    parse_mode = "Markdown")
-
-def launch(update, context):
-    bot = telepot.Bot(TOKEN)
-    btn1 = BT(text = "🍀 Go to PCS 🍀", url = "https://pancakeswap.finance/", callback_data = "1")
-    mu = MU(inline_keyboard = [[btn1]])
-
-    bot.sendMessage(chat_id = '@official_LUCK_community',
-                    text = "We will launch on March 8th at *Pancakeswap*.\n *STAY TUNED!*",
-                    reply_markup = mu,
-                    parse_mode = "Markdown")
-
-def doxx(update, context):
-    bot = telepot.Bot(TOKEN)
-    btn1 = BT(text = "🍀 Audit 🍀", url = "https://auditrate.tech/images/pdf/Luck_0x596eFdFF4bc365d1d32d0EcED114C41789f18b37.pdf", callback_data = "1")
-    btn2 = BT(text = "🍀 KYC 🍀", url = "https://auditrate.tech/certificate/certificate_Luck.html", callback_data = "2")
-    mu = MU(inline_keyboard = [[btn1, btn2]])
-
-    try:
-        bot.sendMessage(chat_id = '@official_LUCK_community',
-                    text = "Doxx(*Audit & KYC*) of project $LUCK can be checked through the next button.\n\n*✨ Get $LUCK & Getting Lucky! ✨*",
-                    reply_markup = mu,
-                    parse_mode = "Markdown")
-
-    except Exception as e:    # 모든 예외의 에러 메시지를 출력할 때는 Exception을 사용
-        print('예외가 발생했습니다.', e)
 
 def main():
     # Create the Updater and pass it your bot's token.
     updater = Updater(TOKEN, workers=10, use_context=True)
-
     # Get the dispatcher to register handlers
     dp = updater.dispatcher
     print("Operating well!")
     dp.add_handler(CommandHandler("market", market))
     dp.add_handler(CommandHandler("spread", spread))
-    dp.add_handler(CommandHandler("tothemoon", tothemoon))
+    dp.add_handler(CommandHandler("communuty_azuki", azuki))
     # dp.add_handler(CommandHandler("airdrop", airdrop)) # airdrop page 작성해야함
-    dp.add_handler(CommandHandler("whitelist", whitelist))
-    # dp.add_handler(CommandHandler("presale", presale)) #presale 링크 작성, token address 적용
-    dp.add_handler(CommandHandler("marketing", marketing))
-    dp.add_handler(CommandHandler("push", push))
-    dp.add_handler(CommandHandler("launch", launch))
-    dp.add_handler(CommandHandler("referral", referral))
-    dp.add_handler(CommandHandler("audit", doxx))
-    dp.add_handler(CommandHandler("kyc", doxx))
     # dp.add_handler(CommandHandler("keyword", keyword))
     # dp.add_handler(CommandHandler("marketing", sir))
     # dp.add_handler(CommandHandler("proposal", sir))
