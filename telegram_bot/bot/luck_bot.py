@@ -508,6 +508,26 @@ def bayc(update, context):
         caption="BAYC : REPLES",
         parse_mode = "Markdown")
 
+def bayc_test(update, context):
+    bot = telepot.Bot(TOKEN)
+
+    bot.sendPhoto(chat_id = '@SNU_08',
+        photo="./fig/1.png",
+        caption="BAYC : VIEWS & LIKES",
+        parse_mode = "Markdown")
+    bot.sendPhoto(chat_id = '@SNU_08',
+        photo="./fig/2.png",
+        caption="BAYC : FORWORDS & RETWEETS",
+        parse_mode = "Markdown")
+    bot.sendPhoto(chat_id = '@SNU_08',
+        photo="./fig/3.png",
+        caption="BAYC : POSTS",
+        parse_mode = "Markdown")
+    bot.sendPhoto(chat_id = '@SNU_08',
+        photo="./fig/4.png",
+        caption="BAYC : REPLES",
+        parse_mode = "Markdown")
+
 
 def main():
     # Create the Updater and pass it your bot's token.
@@ -519,6 +539,7 @@ def main():
     dp.add_handler(CommandHandler("spread", spread))
     dp.add_handler(CommandHandler("community_azuki", azuki))
     dp.add_handler(CommandHandler("community_bayc", bayc))
+    dp.add_handler(CommandHandler("bayc", bayc_test))
     # dp.add_handler(CommandHandler("airdrop", airdrop)) # airdrop page 작성해야함
     # dp.add_handler(CommandHandler("keyword", keyword))
     # dp.add_handler(CommandHandler("marketing", sir))
