@@ -1,5 +1,4 @@
 *.png
+*copy.ipynb
 *.csv
-__pycache__
-.vscode
-.ipynb_checkpoints
+db_config.py

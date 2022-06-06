@@ -11,3 +11,9 @@
 ```
 crawl_eda.ipynb
 ```
+
+## Update crawled data into DB
+
+```
+db.ipynb
+```
