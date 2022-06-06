@@ -553,7 +553,7 @@ def push(update, context):
     mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4], [btn5]])
 
     bot.sendPhoto(chat_id = '@SNU_08',
-        photo="https://t.me/SNU_08/7",
+        photo="https://t.me/SNU_08/14?single",
         caption="*💖 PUSH THE COMMAND 💖*\n\n /shill \n /rule \n /tothemoon \n /luck \n /marketing \n /baby \n /baby_get_luck \n /lucky_chain_letter",
         reply_markup = mu,
         parse_mode = "Markdown")
