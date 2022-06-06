@@ -470,32 +470,42 @@ def market(update, context):
 
 def azuki(update, context):
     bot = telepot.Bot(TOKEN)
-    btn1 = BT(text = "🍀 Official Website 🍀", url = "http://www.lucktoken.io/", callback_data = "1")
-    btn2 = BT(text = "🍀 Official Community 🍀", url = "https://t.me/official_LUCK_community", callback_data = "2")
-    btn3 = BT(text = "🍀 Official Announcement Telegram Channel 🍀", url = "https://t.me/official_LUCK_announcement", callback_data = "3")
-    btn4 = BT(text = "🍀 Official Twitter 🍀", url = "https://twitter.com/official_LUCK_", callback_data = "4")
-    btn5 = BT(text = "🍀 Official Reddit 🍀", url = "https://www.reddit.com/user/official_LUCK_", callback_data = "5")
-    mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4], [btn5]])
 
     bot.sendPhoto(chat_id = '@SNU_08',
         photo="https://t.me/SNU_08/24",
         caption="AZUKI : VIEWS & LIKES",
-        reply_markup = mu,
         parse_mode = "Markdown")
     bot.sendPhoto(chat_id = '@SNU_08',
         photo="https://t.me/SNU_08/25",
         caption="AZUKI : FORWORDS & RETWEETS",
-        reply_markup = mu,
         parse_mode = "Markdown")
     bot.sendPhoto(chat_id = '@SNU_08',
         photo="https://t.me/SNU_08/26",
         caption="AZUKI : POSTS",
-        reply_markup = mu,
         parse_mode = "Markdown")
     bot.sendPhoto(chat_id = '@SNU_08',
         photo="https://t.me/SNU_08/27",
         caption="AZUKI : REPLES",
-        reply_markup = mu,
+        parse_mode = "Markdown")
+
+def bayc(update, context):
+    bot = telepot.Bot(TOKEN)
+
+    bot.sendPhoto(chat_id = '@SNU_08',
+        photo="https://t.me/SNU_08/41",
+        caption="BAYC : VIEWS & LIKES",
+        parse_mode = "Markdown")
+    bot.sendPhoto(chat_id = '@SNU_08',
+        photo="https://t.me/SNU_08/42",
+        caption="BAYC : FORWORDS & RETWEETS",
+        parse_mode = "Markdown")
+    bot.sendPhoto(chat_id = '@SNU_08',
+        photo="https://t.me/SNU_08/43",
+        caption="BAYC : POSTS",
+        parse_mode = "Markdown")
+    bot.sendPhoto(chat_id = '@SNU_08',
+        photo="https://t.me/SNU_08/44",
+        caption="BAYC : REPLES",
         parse_mode = "Markdown")
 
 
@@ -507,7 +517,8 @@ def main():
     print("Operating well!")
     dp.add_handler(CommandHandler("market", market))
     dp.add_handler(CommandHandler("spread", spread))
-    dp.add_handler(CommandHandler("communuty_azuki", azuki))
+    dp.add_handler(CommandHandler("community_azuki", azuki))
+    dp.add_handler(CommandHandler("community_bayc", bayc))
     # dp.add_handler(CommandHandler("airdrop", airdrop)) # airdrop page 작성해야함
     # dp.add_handler(CommandHandler("keyword", keyword))
     # dp.add_handler(CommandHandler("marketing", sir))
