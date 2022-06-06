@@ -473,19 +473,19 @@ def azuki(update, context):
 
     bot.sendPhoto(chat_id = '@SNU_08',
         photo="https://t.me/SNU_08/24",
-        caption="AZUKI : VIEWS & LIKES",
+        caption="*AZUKI : VIEWS & LIKES*",
         parse_mode = "Markdown")
     bot.sendPhoto(chat_id = '@SNU_08',
         photo="https://t.me/SNU_08/25",
-        caption="AZUKI : FORWORDS & RETWEETS",
+        caption="*AZUKI : FORWORDS & RETWEETS*",
         parse_mode = "Markdown")
     bot.sendPhoto(chat_id = '@SNU_08',
         photo="https://t.me/SNU_08/26",
-        caption="AZUKI : POSTS",
+        caption="*AZUKI : POSTS*",
         parse_mode = "Markdown")
     bot.sendPhoto(chat_id = '@SNU_08',
         photo="https://t.me/SNU_08/27",
-        caption="AZUKI : REPLES",
+        caption="*AZUKI : REPLES*",
         parse_mode = "Markdown")
 
 def bayc(update, context):
@@ -493,19 +493,19 @@ def bayc(update, context):
 
     bot.sendPhoto(chat_id = '@SNU_08',
         photo="https://t.me/SNU_08/44",
-        caption="BAYC : VIEWS & LIKES",
+        caption="*BAYC : VIEWS & LIKES*",
         parse_mode = "Markdown")
     bot.sendPhoto(chat_id = '@SNU_08',
         photo="https://t.me/SNU_08/41",
-        caption="BAYC : FORWORDS & RETWEETS",
+        caption="*BAYC : FORWORDS & RETWEETS*",
         parse_mode = "Markdown")
     bot.sendPhoto(chat_id = '@SNU_08',
         photo="https://t.me/SNU_08/42",
-        caption="BAYC : POSTS",
+        caption="*BAYC : POSTS*",
         parse_mode = "Markdown")
     bot.sendPhoto(chat_id = '@SNU_08',
         photo="https://t.me/SNU_08/43",
-        caption="BAYC : REPLES",
+        caption="*BAYC : REPLES*",
         parse_mode = "Markdown")
 
 def bayc_test(update, context):
@@ -517,15 +517,15 @@ def bayc_test(update, context):
         parse_mode = "Markdown")
     bot.sendPhoto(chat_id = '@SNU_08',
         photo="./fig/2.png",
-        caption="BAYC : FORWORDS & RETWEETS",
+        caption="*BAYC : FORWORDS & RETWEETS*",
         parse_mode = "Markdown")
     bot.sendPhoto(chat_id = '@SNU_08',
         photo="./fig/3.png",
-        caption="BAYC : POSTS",
+        caption="*BAYC : POSTS*",
         parse_mode = "Markdown")
     bot.sendPhoto(chat_id = '@SNU_08',
         photo="./fig/4.png",
-        caption="BAYC : REPLES",
+        caption="*BAYC : REPLES*",
         parse_mode = "Markdown")
 
 
