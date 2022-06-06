@@ -492,19 +492,19 @@ def bayc(update, context):
     bot = telepot.Bot(TOKEN)
 
     bot.sendPhoto(chat_id = '@SNU_08',
-        photo="https://t.me/SNU_08/41",
+        photo="https://t.me/SNU_08/44",
         caption="BAYC : VIEWS & LIKES",
         parse_mode = "Markdown")
     bot.sendPhoto(chat_id = '@SNU_08',
-        photo="https://t.me/SNU_08/42",
+        photo="https://t.me/SNU_08/41",
         caption="BAYC : FORWORDS & RETWEETS",
         parse_mode = "Markdown")
     bot.sendPhoto(chat_id = '@SNU_08',
-        photo="https://t.me/SNU_08/43",
+        photo="https://t.me/SNU_08/42",
         caption="BAYC : POSTS",
         parse_mode = "Markdown")
     bot.sendPhoto(chat_id = '@SNU_08',
-        photo="https://t.me/SNU_08/44",
+        photo="https://t.me/SNU_08/43",
         caption="BAYC : REPLES",
         parse_mode = "Markdown")
 
@@ -540,10 +540,7 @@ def main():
     dp.add_handler(CommandHandler("community_azuki", azuki))
     dp.add_handler(CommandHandler("community_bayc", bayc))
     dp.add_handler(CommandHandler("bayc", bayc_test))
-    # dp.add_handler(CommandHandler("airdrop", airdrop)) # airdrop page 작성해야함
-    # dp.add_handler(CommandHandler("keyword", keyword))
-    # dp.add_handler(CommandHandler("marketing", sir))
-    # dp.add_handler(CommandHandler("proposal", sir))
+
 #     dp.add_handler(CommandHandler("start", help))
 #     dp.add_handler(CommandHandler("help", help))
     # dp.add_handler(CommandHandler("welcome", set_welcome))
