@@ -487,12 +487,12 @@ def azuki(update, context):
         caption="AZUKI : FORWORDS & RETWEETS",
         reply_markup = mu,
         parse_mode = "Markdown")
-     bot.sendPhoto(chat_id = '@SNU_08',
+    bot.sendPhoto(chat_id = '@SNU_08',
         photo="https://t.me/SNU_08/26",
         caption="AZUKI : POSTS",
         reply_markup = mu,
         parse_mode = "Markdown")
-     bot.sendPhoto(chat_id = '@SNU_08',
+    bot.sendPhoto(chat_id = '@SNU_08',
         photo="https://t.me/SNU_08/27",
         caption="AZUKI : REPLES",
         reply_markup = mu,
