@@ -552,8 +552,8 @@ def push(update, context):
     btn5 = BT(text = "🍀 Official Reddit 🍀", url = "https://www.reddit.com/user/official_LUCK_", callback_data = "5")
     mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4], [btn5]])
 
-    bot.sendPhoto(chat_id = '@hermes_test_group',
-        photo="https://t.me/hermes_test_group/171",
+    bot.sendPhoto(chat_id = '@SNU_08',
+        photo="https://t.me/SNU_08/7",
         caption="*💖 PUSH THE COMMAND 💖*\n\n /shill \n /rule \n /tothemoon \n /luck \n /marketing \n /baby \n /baby_get_luck \n /lucky_chain_letter",
         reply_markup = mu,
         parse_mode = "Markdown")
