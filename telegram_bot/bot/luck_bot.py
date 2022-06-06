@@ -433,12 +433,8 @@ def tothemoon(update, context):
 
 def spread(update, context):
     bot = telepot.Bot(TOKEN)
-    btn1 = BT(text = "🍀 Official Website 🍀", url = "http://www.lucktoken.io/", callback_data = "1")
-    btn2 = BT(text = "🍀 Official Community 🍀", url = "https://t.me/official_LUCK_community", callback_data = "2")
-    btn3 = BT(text = "🍀 Official Announcement Telegram Channel 🍀", url = "https://t.me/official_LUCK_announcement", callback_data = "3")
-    btn4 = BT(text = "🍀 Official Twitter 🍀", url = "https://twitter.com/official_LUCK_", callback_data = "4")
-    btn5 = BT(text = "🍀 Official Reddit 🍀", url = "https://www.reddit.com/user/official_LUCK_", callback_data = "5")
-    mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4], [btn5]])
+    btn1 = BT(text = "🍀 View the Market Data 🍀", url = "https://dune.com/limtbwoddl/Conditions-for-good-pfp-nft", callback_data = "1")
+    mu = MU(inline_keyboard = [[btn1]])
 
     try:
         bot.sendPhoto(chat_id = '@SNU_08',
@@ -479,20 +475,14 @@ def social_link(update, context):
 
     except Exception as e:    # 모든 예외의 에러 메시지를 출력할 때는 Exception을 사용
         print('예외가 발생했습니다.', e)
-    
-    
-def rule(update, context):
-    bot = telepot.Bot(TOKEN)
-    bot.sendMessage(chat_id = '@SNU_08', 
-                    text = "*🍀 Our 7 Rules 🍀*\n\n1. Raise your LUCK's energy through fun and lucky words.\n2. Being kind to all other members, server staff, and hosts helps to make your LUCK positive.\n3. Don't discuss or ask about other LUCKY friends' personal information.\n4. Don't leak important information (phone number, email, wallet, address, wallet balance, seed statement, etc.) to protect your $LUCK.\n5. Rude and bad behavior becomes a factor that hinders the energy of your LUCK. (Hate of homosexuality, racism, and/or sexist remarks, abusive language, etc.)\n6. Don't send dangerous chats such as swear words, pornography, nudity, and gore. This place should be filled with only positive energy.\n7. FUD has no effect on your luck.",
-                    parse_mode = "Markdown")
 
-def greet(update, context):
+
+def market(update, context):
     bot = telepot.Bot(TOKEN)
-    btn = BT(text = "🍀 Hi 🍀", url = "", callback_data = "1")
+    btn = BT(text = "🍀 View the Market Data 🍀", url = "https://dune.com/limtbwoddl/Conditions-for-good-pfp-nft", callback_data = "1")
     mu = MU(inline_keyboard = [[btn]])
     bot.sendMessage(chat_id = '@SNU_08',
-                   text = "*✨ Hi ✨*",
+                   text = "*✨ Click the button below ✨*",
                    reply_markup = mu,
                    parse_mode = "Markdown")
 
@@ -527,19 +517,6 @@ def marketing(update, context):
     mu = MU(inline_keyboard = [[btn]])
     bot.sendMessage(chat_id = '@official_LUCK_community',
                    text = "If you have a marketing proposal to present to Project LUCK, DM to @luckclever",
-                   reply_markup = mu,
-                   parse_mode = "Markdown")
-
-def luck(update, context):
-    bot = telepot.Bot(TOKEN)
-    btn1 = BT(text = "🍀 Official Website 🍀", url = "http://www.lucktoken.io/", callback_data = "1")
-    btn2 = BT(text = "🍀 Official Announcement Telegram Channel 🍀", url = "https://t.me/official_LUCK_announcement", callback_data = "2")
-    btn3 = BT(text = "🍀 Official Twitter 🍀", url = "https://twitter.com/official_LUCK_", callback_data = "3")
-    btn4 = BT(text = "🍀 Official Reddit 🍀", url = "https://www.reddit.com/user/official_LUCK_", callback_data = "4")
-    mu = MU(inline_keyboard = [[btn1], [btn2], [btn3], [btn4]])
-    
-    bot.sendMessage(chat_id = '@official_LUCK_community',
-                   text = "*🎰 What is $LUCK? 🎰*\n\n*$LUCK is Referral Marketing Platform, inspired by network marketing.*\n👨‍👩‍👧‍👦 For users of platform, we guarantee referral rewards.\n🏢 For advertisers, we provide pool of referral marketers and various marketing tools.\n\n*🚀 How does $LUCK work? 🚀*\n\n1️⃣ Advertisers offer their referral events and deposit rewards to $LUCK's pool.\n2️⃣ Platform users do referral marketing for the Advertisers.\n3️⃣ Users get massive referral rewards from $LUCK's pool.\n4️⃣ Users will get more rewards when their friends do marketing.\n5️⃣ Advertisers get marketed by platform users.\n\n$LUCK aim to create synergy by connecting marketers and advertisers.\n*🍀 Join LUCK, Grow together. $LUCK will make your wallet LUCKY 🍀*",
                    reply_markup = mu,
                    parse_mode = "Markdown")
 
@@ -600,7 +577,7 @@ def main():
     # Get the dispatcher to register handlers
     dp = updater.dispatcher
     print("Operating well!")
-    dp.add_handler(CommandHandler("greet", greet))
+    dp.add_handler(CommandHandler("market", market))
     dp.add_handler(CommandHandler("spread", spread))
     dp.add_handler(CommandHandler("tothemoon", tothemoon))
     dp.add_handler(CommandHandler("rule", rule))
